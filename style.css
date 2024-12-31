@@ -44,17 +44,27 @@ body{
     border: none;
     font-size: 60px;
     margin-top: 400px;
-    color: white;
+    color:white;
     background: black;
-    animation: blink 1s infinite;
+    animation: blink 1s 3s;
+    animation-delay: 3s;
+    animation-play-state: running; 
+
   } 
   @keyframes blink {
-    0%, 100% { opacity: 1; } /* Fully visible */
-    50% { opacity: 0; }     /* Invisible */
-  }
+    0%, 100% { 
+        opacity: 1; /* Fully visible */
+        color:black;
+    }
+    90% { 
+        opacity: 0; /* Invisible */
+        color: white;
+    }
+}
   .startbutton:hover{
     text-shadow: 2px 2px 25px #fff;
     font-size: 70px;
     transition: 0.5s;
+    color: white;
+    
   }
-  
