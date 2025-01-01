@@ -7,6 +7,7 @@
     <title>Vijay's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
@@ -14,39 +15,30 @@
 <body>
     <div class="App">
         <header class="App-header">
-            <h1 class="animate__animated animate__jackInTheBox">Hi there, I'm Vijay</h1>
-            <h2>{ Developer }</h2>
+            <h1 class="animate__animated animate__zoomInUp">Hi there, I'm Vijay</h1>
+            <h2 id="intro">{ Developer }</h2>
             <button class="startbutton">
-                <a href="#skill-sec"><i class="fa-solid fa-caret-down"></i></a>
+                <a href="#skill-section"><i class="fa-solid fa-caret-down"></i></a>
             </button>
         </header>
-        <h2>My Skills</h2>
-        <section class="skills-section" id="skill-sec">
-            <div class="skill html">
-                <div class="circle">90%</div>
-                <div class="skill-name">HTML</div>
+        <div id="skill-section">
+            <h2 id="skill-head">My Skills</h2>
+            <div class="skill-container">
+              <div class="skill">
+                <img src="https://img.icons8.com/nolan/64/html-5.png" alt="HTML" />
+                <p>HTML</p>
+              </div>
+              <div class="skill">
+                <img src="https://img.icons8.com/nolan/64/css3.png" alt="CSS" />
+                <p>CSS</p>
+              </div>
+              <div class="skill">
+                <img src="https://img.icons8.com/nolan/64/javascript.png" alt="JavaScript" />
+                <p>JavaScript</p>
+              </div>
+              <!-- Add more skills here -->
             </div>
-            <div class="skill css">
-                <div class="circle">80%</div>
-                <div class="skill-name">CSS</div>
-            </div>
-            <div class="skill js">
-                <div class="circle">70%</div>
-                <div class="skill-name">JavaScript</div>
-            </div>
-            <div class="skill python">
-                <div class="circle">75%</div>
-                <div class="skill-name">Python</div>
-            </div>
-            <div class="skill java">
-                <div class="circle">50%</div>
-                <div class="skill-name">Java</div>
-            </div>
-            <div class="skill flutter">
-                <div class="circle">45%</div>
-                <div class="skill-name">Flutter</div>
-            </div>
-        </section>
+          </div>          
     </div>
 </body>
 

@@ -21,7 +21,7 @@ body {
   color: white;
 }
 
-h2 {
+#intro{
   position: relative;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -52,8 +52,8 @@ h2 {
   margin-top: 20px;
   color: white;
   background: black;
-  animation: blink 1s 3s;
-  animation-delay: 3s;
+  animation: blink 1s infinite;
+  animation-delay: 2s;
 }
 
 .startbutton:hover {
@@ -61,6 +61,10 @@ h2 {
   font-size: 75px;
   transition: 0.3s;
   color: white;
+}
+.startbutton::after{
+  text-shadow: none;
+  transition: 0.3s;
 }
 
 @keyframes blink {
@@ -79,94 +83,55 @@ a {
   color: white;
 }
 
-/* Skills section */
-.skills-section {
-  max-width: 900px;
-  margin: 50px auto;
+
+/* Skill section styles */
+#skill-section {
   text-align: center;
-}
-
-.skills-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-  color: #ffcc29;
-  text-transform: uppercase;
-}
-
-.skill {
-  display: inline-block;
   padding: 20px;
-  margin: 20px;
-  text-align: center;
-  border: 1px solid white;
-  background-color: rgb(0, 0, 30);
-  border-radius: 20px;
-}
-.skill:hover{
-  opacity: 0.5;
+  background-color: #0d1117;
 }
 
-.skill-name {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #ffcc29;
+#skill-head {
+  animation: lightSpeedInRight;
+  animation-duration: 2s;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
-.circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: conic-gradient(#ff8522 0% 90%, rgba(255, 255, 255, 0.2) 90% 100%);
+/* Skill container */
+.skill-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual skill box */
+.skill {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #000000;
-  position: relative;
+  padding: 10px;
+  background: black;;;;;;;;;;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 150px; /* Adjust width as needed */
 }
 
-.css .circle {
-  background: conic-gradient(#1fadff 0% 80%, rgba(255, 255, 255, 0.2) 80% 100%);
+.skill img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
 }
 
-.js .circle {
-  background: conic-gradient(#ffe600 0% 70%, rgba(255, 255, 255, 0.2) 70% 100%);
+.skill p {
+  font-size: 1em;
+  margin: 0;
+  color: #fff;
 }
 
-.python .circle {
-  background: conic-gradient(#00ff9d 0% 75%, rgba(255, 255, 255, 0.2) 75% 100%);
-}
-.java .circle {
-  background: conic-gradient(#ff0000 0% 50%, rgba(255, 255, 255, 0.2) 50% 100%);
-}
-.flutter .circle {
-  background: conic-gradient(#0015ff 0% 45%, rgba(255, 255, 255, 0.2) 45% 100%);
-}
-
-/* Media queries */
-@media screen and (max-width: 900px) {
-  .skills-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-
-  .skill {
-      flex-basis: 45%;
-      margin: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .skills-section h2 {
-      font-size: 2em;
-  }
-
-  .circle {
-      width: 100px;
-      height: 100px;
-      font-size: 1.2em;
-  }
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 7px rgba(255, 255, 255, 0.493);
 }
