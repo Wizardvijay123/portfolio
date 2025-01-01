@@ -4,22 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Link Font Awesome -->
+    <title>Vijay's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
     <div class="App">
-        <div class="App-header">
-            <h1 class="animate__animated animate__jackInTheBox">Hi, I'am vijay</h1>
-            <h2>Developer</h2>
-            <div >
-                <button class="startbutton"><i class="fa-solid fa-caret-down"></i></button>
+        <header class="App-header">
+            <h1 class="animate__animated animate__jackInTheBox">Hi there, I'm Vijay</h1>
+            <h2>{ Developer }</h2>
+            <button class="startbutton">
+                <a href="#skill-sec"><i class="fa-solid fa-caret-down"></i></a>
+            </button>
+        </header>
+        <h2>My Skills</h2>
+        <section class="skills-section" id="skill-sec">
+            <div class="skill html">
+                <div class="circle">90%</div>
+                <div class="skill-name">HTML</div>
             </div>
-        </div>
+            <div class="skill css">
+                <div class="circle">80%</div>
+                <div class="skill-name">CSS</div>
+            </div>
+            <div class="skill js">
+                <div class="circle">70%</div>
+                <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill python">
+                <div class="circle">75%</div>
+                <div class="skill-name">Python</div>
+            </div>
+        </section>
     </div>
 </body>
 
