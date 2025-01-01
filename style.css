@@ -137,7 +137,7 @@ a {
 }
 
 /* Media queries */
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   .skills-section {
       display: flex;
       flex-wrap: wrap;
