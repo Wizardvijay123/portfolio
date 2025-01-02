@@ -92,13 +92,14 @@ a {
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-  background-color: #001845;
+  background-color: #2c3136;
 }
 .hero img {
   max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 20px;
+  border: 1px solid white;
 }
 .hero-content {
   max-width: 600px;
@@ -129,13 +130,16 @@ a {
   background-color: #fdf0d5;
   color: #780000;
 }
+#hero-photo:hover{
+  opacity: 0.5;
+}
 
 
 /* Skill section styles */
 #skill-section {
   text-align: center;
   padding: 20px;
-  background-color: #343a40;
+  background-color: #0d1117;
 }
 
 #skill-head {
@@ -202,7 +206,7 @@ a {
   width: 80%;
   margin: 20px auto;
   padding: 20px;
-  background: #343a40;
+  background: #0d1117;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -211,7 +215,9 @@ a {
   font-weight: bold;
   margin-bottom: 20px;
   color: #ffffff;
-  border-bottom: 2px solid #00bcd4;
+  border: 2px solid #d2ebef;
+  border-radius: 3px;
+  padding: 5px;
   display: inline-block;
 }
 .education-item {
@@ -300,7 +306,7 @@ footer {
 
 .social-links a:hover {
   color: #80ffdb;
-  text-shadow: 2px 2px 30px #80ffdb;
+  text-shadow: 2px 2px 20px #80ffdb;
 }
 
 .footer-note {
