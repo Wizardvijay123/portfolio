@@ -102,7 +102,7 @@ a {
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-  background-color: #2c3136;
+  background-color: #2c313600;
 }
 .hero img {
   max-width: 300px;
@@ -382,7 +382,7 @@ footer {
 }
 
 .flip-card-back {
-  background-image: url('./images/vijay.jpg'); /* Replace with your back image */
+  background-image: url('./images/white-vij.jpg'); /* Replace with your back image */
   background-size: cover;
   background-position: center;
   transform: rotateY(180deg);
