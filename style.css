@@ -94,6 +94,75 @@ a {
 }
 
 
+/* Navbar styling */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #c6c6c61c;
+  border-bottom: 1px rgba(255, 255, 255, 0.461) solid;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-list li {
+  padding: 8px 12px;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar-list li a:hover {
+  color: #003478
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-list {
+      width: 100%;
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .navbar-list li {
+      width: 100%;
+      text-align: left;
+  }
+}
+
+/* Logo styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+
+
 
 .hero {
   display: flex;
@@ -129,16 +198,16 @@ a {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
-  color: #fdf0d5;
-  background-color: #780000;
+  color: #ffffff;
+  background-color: #003478;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
 }
 .btn:hover {
-  background-color: #fdf0d5;
-  color: #780000;
+  background-color: #ffffff;
+  color: #003478;
 }
 #hero-phoyo{
   width: 300px;
@@ -155,17 +224,12 @@ a {
 #skill-section {
   text-align: center;
   padding: 20px;
-  background-color: #0d1117;
 }
 
 #skill-head {
-  animation: lightSpeedInRight;
-  animation-duration: 2s;
   font-size: 2em;
   margin-bottom: 20px;
-  background: linear-gradient(to right, rgb(255, 0, 0),rgb(0, 238, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: rgb(125, 147, 255);
 }
 
 /* Skill categories */
@@ -176,7 +240,7 @@ a {
 .category-title {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #48bfe3;
+  color: #dc8fff;
   text-transform: uppercase;
 }
 
@@ -325,8 +389,8 @@ footer {
 }
 
 .social-links a:hover {
-  color: #ffeb87;
-  text-shadow: 2px 2px 20px #fff475;
+  color: #58a6ff;
+  text-shadow: 2px 2px 20px #58a6ff;
 }
 
 .footer-note {
