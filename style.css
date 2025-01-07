@@ -32,6 +32,7 @@ body {
 }
 
 #intro{
+  margin-top: 150px;
   position: relative;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -96,7 +97,7 @@ a {
 
 /* Navbar styling */
 .navbar {
-  position: sticky;
+  position:fixed;
   top: 0;
   z-index: 1000;
   background-color: #c6c6c61c;
@@ -130,8 +131,8 @@ a {
   transition: color 0.3s;
 }
 
-.navbar-list li a:hover {
-  color: #003478
+.navbar-list li :hover {
+  opacity: 0.5;
 }
 
 /* Mobile responsiveness */
@@ -169,7 +170,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 60vh;
   padding: 20px;
   background-color: #2c313600;
 }
