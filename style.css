@@ -224,7 +224,7 @@ a {
   width: 80%;
   margin: 20px auto;
   padding: 20px;
-  background: #0d1117;
+  background: #000000;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -381,7 +381,7 @@ footer {
 
 .flip-card-back {
   background-image: url(''); /* Replace with your back image */
-  background-color: #0d1117;
+  background-color: #000000;
   background-size: cover;
   background-position: center;
   transform: rotateY(180deg);
