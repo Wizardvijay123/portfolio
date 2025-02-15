@@ -6,7 +6,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const stars = [];
-const numStars = 500;
+const numStars = 1000;
 
 for (let i = 0; i < numStars; i++) {
     stars.push({

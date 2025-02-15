@@ -509,11 +509,11 @@ footer {
   border-radius: 50%;
   right: 20%;
   top: 15%;
-  /* background: #ffffffe6; */
-  backdrop-filter: blur(10px);
+  background: #ffffffe6;
+  backdrop-filter: blur(5px);
   transition: all 0.5s;
-  /* box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
-    -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6; */
+  box-shadow: -7px 10px 0 #ffffffe6, 8px 15px 0 #ffffffe6, -17px 1px 0 #ffffffe6,
+    -20px 10px 0 #ffffffe6, -7px 23px 0 #ffffffe6, -15px 25px 0 #ffffffe6;
 }
 
 input:checked ~ .decoration {
@@ -543,9 +543,15 @@ input:checked + .slider:before {
 
 /* Adjust elements for light mode */
 .light-mode .skill {
-  background:#000000;
+  background:#ffffff;
   border: 1px solid black;
   color: black;
+} 
+
+.light-mode .skill p {
+  font-size: 1em;
+  margin: 0;
+  color: #000000;
 }
 
 .light-mode .btn {
@@ -567,14 +573,29 @@ input:checked + .slider:before {
 }
 
 .light-mode .social-links a:hover {
-  color: #dd1c1a;
-  text-shadow: 2px 2px 20px #dd1c1a;
+  color: #06aed5;
+  text-shadow: 2px 2px 20px #06aed5;
 }
 
 .light-mode .social-links a {
   margin: 0 10px;
-  color: #06aed5;
+  color: #dd1c1a;
   font-size: 22px;
   transition: color 0.3s ease-in-out;
 }
 
+.light-mode #skill-head {
+  color:#00043a;
+}
+
+.light-mode .category-title {
+  color: #004e89;
+}
+
+.light-mode .flip-card-front {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.light-mode .flip-card-back {
+  border: 1px solid rgb(0, 0, 0);
+}
