@@ -47,3 +47,25 @@ window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const themeSwitch = document.getElementById("switch");
+
+    // Check if a theme is stored in localStorage
+    if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        themeSwitch.checked = true;
+    }
+
+    themeSwitch.addEventListener("change", () => {
+        if (themeSwitch.checked) {
+            document.body.classList.add("light-mode");
+            localStorage.setItem("theme", "light"); // Store theme preference
+        } else {
+            document.body.classList.remove("light-mode");
+            localStorage.setItem("theme", "dark");
+        }
+    });
+});
