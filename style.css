@@ -55,40 +55,7 @@ body {
       background-position: 500%;
   }
 }
-
-/* Start button */
-.startbutton {
-  border: none;
-  font-size: 60px;
-  margin-top: 20px;
-  color: white;
-  background: black;
-  animation: blink 1s infinite;
-  animation-delay: 2s;
-}
-
-.startbutton:hover {
-  text-shadow: 2px 2px 35px #fff;
-  font-size: 75px;
-  transition: 0.3s;
-  color: white;
-}
-.startbutton::after{
-  text-shadow: none;
-  transition: 0.3s;
-}
-
-@keyframes blink {
-  0%, 100% {
-      opacity: 1;
-      color: black;
-  }
-  90% {
-      opacity: 0;
-      color: white;
-  }
-}
-
+ 
 a {
   text-decoration: none;
   color: white;
@@ -537,7 +504,7 @@ input:checked + .slider:before {
 
 /* Light Theme */
 .light-mode {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
@@ -565,11 +532,11 @@ input:checked + .slider:before {
   border: 1px solid #003478;
 }
 .light-mode footer{
-  background: #fff1d0;
+  background:#fff6ce;
   color: black;
 }
 .light-mode .footer-heading{
-  color: #dd1c1a;
+  color: #333333;
 }
 
 .light-mode .social-links a:hover {
@@ -579,7 +546,7 @@ input:checked + .slider:before {
 
 .light-mode .social-links a {
   margin: 0 10px;
-  color: #dd1c1a;
+  color: #007AFF;
   font-size: 22px;
   transition: color 0.3s ease-in-out;
 }
@@ -598,4 +565,13 @@ input:checked + .slider:before {
 
 .light-mode .flip-card-back {
   border: 1px solid rgb(0, 0, 0);
+}
+
+.light-mode #intro{
+  background: linear-gradient(90deg, #ffffff, #000000, #ffffff); 
+  background-repeat: no-repeat;
+  background-size: 80%; 
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
