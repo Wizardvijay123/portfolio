@@ -502,11 +502,14 @@ input:checked + .slider:before {
 }
 
 
+
+
 /* Light Theme */
 .light-mode {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: black;
 }
+
 
 /* Adjust elements for light mode */
 .light-mode .skill {
@@ -574,4 +577,105 @@ input:checked + .slider:before {
   animation: animate 4s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.light-mode .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Sun at the top right */
+.light-mode .sun {
+  position: absolute;
+  background: radial-gradient(circle, #FFD700, #FF8C00);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0 0 40px 10px rgba(255, 165, 0, 0.5);
+}
+
+/* Realistic cloud shape using multiple overlapping circles */
+.light-mode .cloud {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+}
+
+ .cloud-part {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+}
+
+.light-mode .cloud-part-1 {
+  width: 120px;
+  height: 120px;
+  top: 20px;
+  left: 10px;
+}
+
+.light-mode .cloud-part-2 {
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 80px;
+}
+
+.light-mode .cloud-part-3 {
+  width: 130px;
+  height: 130px;
+  top: 30px;
+  left: 60px;
+}
+
+.light-mode .cloud-part-4 {
+  width: 110px;
+  height: 110px;
+  top: 30px;
+  left: 160px;
+}
+
+
+
+/* Cloud movement animation */
+@keyframes moveCloud1 {
+  0% {
+      transform: translateX(-100%) translateY(10vh); /* Start off-screen to the left and slightly down */
+  }
+  50% {
+      transform: translateX(50vw) translateY(-10vh); /* Move horizontally and slightly up */
+  }
+  100% {
+      transform: translateX(100vw) translateY(10vh); /* End off-screen to the right and slightly down */
+  }
+}
+
+@keyframes moveCloud2 {
+  0% {
+      transform: translateX(-100%) translateY(5vh); /* Start off-screen to the left and slightly down */
+  }
+  50% {
+      transform: translateX(50vw) translateY(5vh); /* Move horizontally and stay at a fixed vertical position */
+  }
+  100% {
+      transform: translateX(100vw) translateY(5vh); /* End off-screen to the right */
+  }
+}
+
+/* Apply different speeds to each cloud */
+.light-mode .cloud-1 {
+  animation: moveCloud1 25s linear infinite; /* 25 seconds */
+}
+
+.light-mode .cloud-2 {
+  animation: moveCloud2 20s linear infinite; /* 20 seconds */
 }
